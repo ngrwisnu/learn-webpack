@@ -1,0 +1,12 @@
+$primary: indigo;
+$bg: wheat;
+$text: violet;
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: $bg;
+
+  h3 {
+    color: $text;
+  }
+}
