@@ -15,7 +15,7 @@ module.exports = merge(config, {
   },
   output: {
     path: path.resolve(__dirname, "output"),
-    filename: "bundle.js",
+    filename: "[name].js",
     assetModuleFilename: "img/[hash][ext]",
     clean: true,
   },

@@ -1,4 +1,4 @@
-import * as bootstrap from "bootstrap";
+import "./vendor";
 import { run } from "./app/app";
 import { AlertService } from "./app/alert.service";
 import { CalculatorService } from "./app/calculator.service";
