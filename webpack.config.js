@@ -1,14 +1,13 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: "development", // value => 'production' | 'development'
   entry: "./src/index.js",
-  output: {
-    path: path.resolve(__dirname, "output"),
-    filename: "bundle.js",
-  },
-  devtool: false,
-  //watch: true, // webpack will continue to watch for changes
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+    }),
+  ],
   module: {
     rules: [
       {
